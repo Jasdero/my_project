@@ -9,6 +9,13 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Flight
 {
+    public function __toString()
+    {
+        return $this->pilot;
+    }
+
+
+
     /**
      * @var int
      */

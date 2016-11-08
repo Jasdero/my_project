@@ -3,12 +3,19 @@
 namespace WCS\CoavBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
 /**
  * PlaneModel
  */
+
+
 class PlaneModel
 {
+
+    public function __toString()
+    {
+        return $this->model;
+    }
+
     /**
      * @var int
      */
